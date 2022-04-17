@@ -6,7 +6,7 @@ metadata:
   labels:
     app: test
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: test
@@ -22,7 +22,7 @@ spec:
         - containerPort: 4421
         volumeMounts:
         - name: certs-vol
-          mountPath: "/instance/config.py"
+          mountPath: "/user/src/instance"
           readOnly: true
       volumes:
       - name: certs-vol
