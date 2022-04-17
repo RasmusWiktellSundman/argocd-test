@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: test-deployment
-  namespace: test-app
+  namespace: test-app-dev
   labels:
     app: test
 spec:
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: test
-        image: rawmind/web-test:latest
+        image: ghcr.io/rasmuswiktellsundman/python-docker-test/test-app:latest
         ports:
         - containerPort: 8080
