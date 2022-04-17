@@ -19,4 +19,4 @@ spec:
       - name: test
         image: ghcr.io/rasmuswiktellsundman/python-docker-test/test-app:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 4421
