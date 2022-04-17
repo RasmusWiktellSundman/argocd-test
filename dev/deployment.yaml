@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: test
-        image: ghcr.io/rasmuswiktellsundman/python-docker-test/test-app:latest
+        image: ghcr.io/rasmuswiktellsundman/python-docker-test/test-app:{ github.run_number }
         ports:
         - containerPort: 4421
         volumeMounts:
