@@ -23,7 +23,7 @@ spec:
         volumeMounts:
         - name: certs-vol
           mountPath: "/usr/src/app/instance"
-          readOnly: true
+          readOnly: false
       volumes:
       - name: certs-vol
         secret:
