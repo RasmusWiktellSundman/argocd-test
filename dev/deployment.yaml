@@ -20,11 +20,11 @@ spec:
         image: ghcr.io/rasmuswiktellsundman/python-docker-test/test-app:latest
         ports:
         - containerPort: 4421
-      volumeMounts:
+        volumeMounts:
         - name: certs-vol
           mountPath: "/instance/config.py"
           readOnly: true
       volumes:
-        - name: certs-vol
-          secret:
-            secretName: config
+      - name: certs-vol
+        secret:
+          secretName: config
