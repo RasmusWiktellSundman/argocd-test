@@ -22,7 +22,7 @@ spec:
         - containerPort: 4421
         volumeMounts:
         - name: certs-vol
-          mountPath: "/user/src/app/instance"
+          mountPath: "/usr/src/app/instance"
           readOnly: true
       volumes:
       - name: certs-vol
