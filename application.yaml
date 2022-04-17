@@ -7,7 +7,7 @@ spec:
   project: default
 
   soruce:
-    repoURL: das
+    repoURL: https://github.com/RasmusWiktellSundman/argocd-test.git
     targetRevision: HEAD
     path: dev
   destination:
